@@ -1,0 +1,12 @@
+<html>
+<body>
+ <h1>My Movies</h1>
+
+{% for rating in ratings %}
+
+ 	<h2> You gave {{ rating.movie.name }} a {{ rating.rating }}</h2>
+ 
+ {% endfor %}
+
+</body>
+</html>

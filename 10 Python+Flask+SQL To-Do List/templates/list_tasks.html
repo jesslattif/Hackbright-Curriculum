@@ -1,0 +1,21 @@
+<html>
+    <head>
+    	<title>Tipsy</title>
+    	<link rel="stylesheet" href="/static/css/bootstrap.css"
+    type="text/css">
+    	<style> 
+    		h1 { 
+    			text-indent: 1.0em;
+    		}
+    	</style>
+    </head>
+    <body>
+        <h1> 
+        	Task List</h1>
+        <ul>
+        {% for task in tasks %}
+        <li>Task {{ task['id'] }}: {{ task['title'] }}</li>
+        {% endfor %}
+        </ul>
+    </body>
+</html>

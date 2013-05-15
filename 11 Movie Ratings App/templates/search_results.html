@@ -1,0 +1,19 @@
+<html>
+{% block body %}
+
+<h1>All Movies matching "{{ search_term }}" </h1>
+	<table>
+		<tr>
+			<td><strong>Movie Title</strong></td>
+		</tr>
+
+		{% for movie in movies %}
+		<tr>	
+			<td><a href="{{url_for('display_movie', id=movie.id)}}">
+				{{ movie.name }}</a></td>
+		</tr>
+		{% endfor %}
+
+	</table>
+{% endblock %}
+</html>

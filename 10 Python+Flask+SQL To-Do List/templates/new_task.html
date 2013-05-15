@@ -1,0 +1,35 @@
+<html>
+    <head>
+    	<title>Tipsy</title>
+    	<link rel="stylesheet" href="/static/css/bootstrap.css"
+    type="text/css">
+    	<style> 
+    		h1 { 
+    			text-indent: 1.0em;
+    		}
+            div.row {
+                position: relative;
+            }
+            div.right-col {
+                position: absolute;
+                top:0
+                left: 200px;
+            }
+    	</style>
+    </head>
+    <body>
+        <div> <h1> 
+        	Submit Your Task</h1>
+        </div>
+        <div>
+
+        <form method="POST" action="save_task">
+            <div class = "row">
+                <div class = "left-col">Enter your task name </div>
+                <div class = "right-col"><input type="text" name="task_title"></input><br></div>
+            Enter your User ID <input type="text" name="user_id"></input><br>
+        <input type="submit"></input>
+        </form>
+        </div>
+    </body>
+</html>

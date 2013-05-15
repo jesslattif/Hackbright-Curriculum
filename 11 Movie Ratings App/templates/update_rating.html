@@ -1,0 +1,16 @@
+<html>
+<h1>Update Rating for {{movie.name}} </h1>
+<h2>
+ <br>
+ <br> I'll give it a <form name ="rate_movies" action="{{url_for('update_rating', id=movie.id)}}" method="POST">
+  	<select name="rating">
+  	<option>1</option>
+  	<option>2</option>
+  	<option>3</option>
+  	<option>4</option>
+  	<option>5</option>
+  	</select>
+  	<input type="submit" value="submit">
+  </form></h3>
+</body>
+<html>
